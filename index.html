@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/newsletter-style.css">
+  <link rel="stylesheet" href="css/dialog-style.css"
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -32,7 +34,7 @@
 
         <div class="email">
             <label for="">Email address</label>
-            <input type="text" placeholder="email@company.com">
+            <input id="email-input" placeholder="email@company.com">
         </div>
         <button onclick="submitForm(event)">Subscribe to monthly newsletter</button>
     </form>
@@ -44,9 +46,9 @@
   <!-- Success message start -->
 
   <section class="dialog">
-    <img src="assets/images/icon-success.svg" alt="">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 64 64"><defs><linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%"><stop offset="0%" stop-color="#FF6A3A"/><stop offset="100%" stop-color="#FF527B"/></linearGradient></defs><g fill="none"><circle cx="32" cy="32" r="32" fill="url(#a)"/><path stroke="#FFF" stroke-width="4" d="m18.286 34.686 8.334 7.98 19.094-18.285"/></g></svg>
     <h2>Thanks for subscribing!</h2>
-    <p>A confirmation email has been sent to <b>ash@loremcompany.com</b>. Please open it and click the button inside to confirm your subscription.</p>
+    <p>A confirmation email has been sent to <b id="show-email">ash@loremcompany.com</b>. Please open it and click the button inside to confirm your subscription.</p>
     <button onclick="dismissDialog()">Dismiss message</button>
   </section>
 
