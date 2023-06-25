@@ -162,3 +162,12 @@ button:hover {
     margin-bottom: 1.5rem;
     font-size: 0.8rem;
 }
+
+/* error */
+
+input.error,
+input.error:focus {
+    background-color: #ffe8e6;
+    border: solid 1px #ddb4b0;
+    color: #d48f90;
+}
