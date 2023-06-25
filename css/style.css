@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: hsl(235, 18%, 26%);
+    font-size: 16px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.newsletter {
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 20px;
+    padding: 1rem;
+    background-color: hsl(0, 0%, 100%);
+    width: 950px;
+}
+
+.newsletter > form {
+    padding: 3rem;
+}
+
+.dialog {
+    display: none;
+    border-radius: 20px;
+}
+
+.active {
+    display: flex;
+
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: hsl(234, 29%, 20%);
+}
+
+form > p {
+    font-size: 1rem;
+    color: hsl(234, 29%, 20%);
+    margin-bottom: 1rem;
+}
+
+/* list */
+
+form > ul {
+    margin: 1rem 0 2rem 0;
+}
+
+form > ul li{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin: 0.7rem 0 0.7rem 0;
+}
+
+form > ul li img {
+    margin-right: 1rem;
+}
+
+/* email */
+
+.email label{
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 900;
+    letter-spacing: 0;
+    margin-bottom: 0.5rem;
+    color: hsl(234, 29%, 20%);
+}
+
+.email input {
+    color: hsl(231, 7%, 60%);
+    border: solid 1px hsl(231, 7%, 60%);
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.email input:focus {
+    color: hsl(234, 29%, 20%);
+    border-color: hsl(234, 29%, 20%);
+    outline: none;
+}
+
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: hsl(231, 7%, 60%);
+    opacity: 1; /* Firefox */
+  }
+  
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: hsl(231, 7%, 60%);
+}
+
+input::-ms-input-placeholder { /* Microsoft Edge */
+    color: hsl(231, 7%, 60%);
+}
+
+input:focus::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: hsl(234, 29%, 20%);
+    opacity: 1; /* Firefox */
+}
+
+input:focus:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: hsl(234, 29%, 20%);
+}
+
+input:focus::-ms-input-placeholder { /* Microsoft Edge */
+    color: hsl(234, 29%, 20%);
+}
+/* button */
+
+form > button {
+    width: 100%;
+    background-color: hsl(235, 18%, 26%);
+    color: hsl(0, 0%, 100%);
+    padding: 1rem;
+    text-align: center;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+form > button:hover {
+    background-image: linear-gradient(90deg, #ff527b, #ff6a3a);
+    box-shadow: 3px 3px 20px #ff527b;
+}
