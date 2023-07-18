@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Oppenheimer450/newsletter-sign-up-with-success-message-main.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [github](https://github.com/Oppenheimer450/newsletter-sign-up-with-success-message-main.git)
+- Live Site URL: [link](https://oppenheimer450.github.io/newsletter-sign-up-with-success-message-main/)
 
 ## My process
 
