@@ -13,7 +13,7 @@ function submitForm(event) {
         return
     }
     
-    // change it in dialog success
+    // change email in dialog success message
     const textEl = document.querySelector('#show-email')
     textEl.innerText = email_address
     

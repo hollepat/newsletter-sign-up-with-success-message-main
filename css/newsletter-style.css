@@ -26,6 +26,7 @@ body {
     padding: 1rem;
     background-color: hsl(0, 0%, 100%);
     width: 950px;
+    margin-bottom: 1rem;
 }
 
 .newsletter > form {
@@ -40,11 +41,11 @@ body {
     padding: 2rem 3rem 3rem 3rem;
     background-color: hsl(0, 0%, 100%);
     width: 400px;
+    margin-bottom: 1rem;
 }
 
 .active {
     display: flex;
-
 }
 
 h1 {
@@ -76,6 +77,10 @@ form > ul li{
 
 form > ul li img {
     margin-right: 1rem;
+}
+
+.image-mobile {
+    display: none;
 }
 
 /* email */
@@ -151,16 +156,17 @@ button:hover {
 /* dialog style */
 
 
-.dialog > h2 {
+.dialog > div > h2 {
     font-size: 2.8rem;
     color: hsl(235, 18%, 26%);
     margin: 1.5rem 0 1.5rem 0;
     line-height: 2.8rem;
 }
 
-.dialog > p {
+.dialog > div > p {
     margin-bottom: 1.5rem;
     font-size: 0.8rem;
+    color: hsl(235, 18%, 26%)
 }
 
 /* error */
@@ -170,4 +176,56 @@ input.error:focus {
     background-color: #ffe8e6;
     border: solid 1px #ddb4b0;
     color: #d48f90;
+}
+
+/* text */
+
+.attribution { font-size: 11px; text-align: center; color:hsl(0, 0%, 100%)}
+.attribution a { color: hsl(231, 7%, 60%); }
+
+@media screen and (max-width: 375px) {
+
+    html {
+        font-size: 12px;
+    }
+    
+    body {
+        background-color: hsl(0, 0%, 100%);
+        padding: 0;
+        height: 100vh;
+    }
+
+    .newsletter {
+        display: none;
+        flex-direction: column;
+        width: auto;
+        padding: 0;
+    }
+
+    .dialog {
+        display: none;
+        justify-content: space-between;
+        height: 100vh;
+    }
+
+    .active {
+        display: flex;
+    }
+
+    .image-mobile {
+        display: block;
+    }
+
+    .image-desktop {
+        display: none;
+    }
+
+    .dialog > div > p {
+        margin-bottom: 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    .attribution { font-size: 11px; text-align: center; color: black;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+
 }
