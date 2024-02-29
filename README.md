@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [github](https://github.com/Oppenheimer450/newsletter-sign-up-with-success-message-main.git)
-- Live Site URL: [link](https://oppenheimer450.github.io/newsletter-sign-up-with-success-message-main/)
+- Solution URL: [github](https://github.com/hollepat/newsletter-sign-up-with-success-message-main.git)
+- Live Site URL: [link](https://hollepat.github.io/newsletter-sign-up-with-success-message-main/)
 
 ## My process
 
